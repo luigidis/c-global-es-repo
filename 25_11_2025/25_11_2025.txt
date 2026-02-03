@@ -1,0 +1,28 @@
+Codificare un programma che svolga le segg. operazioni: 
+
+1) prenda in input a linea di comando due numeri N ed M; 
+2) legga, dallo standard input, una matrice di stringhe di dimensioni N x M; ogni riga della matrice e' rappresentata da una linea di testo, in cui le stringhe della singola riga sono separate da spazi;
+3) inserisca la stringhe in una matrice N x M di strutture S, in cui ogni struttura contenga un campo per la stringa (si assuma che la stringa contenga max 30 caratteri) ed un campo per la lunghezza della stringa; 
+4) stampi su standard output la media della lunghezza di ogni stringa per ogni singola colonna della matrice S;
+5) inserisca i numeri medi calcolati al punto precedente in un array di dimensione M;
+6) proceda con l'ordinamento crescente di ogni colonna della matrice S che si basi sul confronto lessicografico tra le stringhe;  
+
+Il programma potra' essere codificato in un unico file sorgente, ma dovra' contenere almeno le segg. funzioni:
+
+- readArgs(): funzione che prende in input i parametri argc ed argv del main 
+e restituisce una struttura con i due numeri N ed M;
+- allocMatrix(): funzione che proceda con allocazione dinamica di un array bidimensionale di N x M strutture del tipo indicato al punto 3; 
+- readMatrix(): funziome che legga, dallo standard input, la matrice di stringhe  
+di dimensioni N x M e la memorizzi in un array bidimensionale di 
+strutture S come specificato nel punto 3; 
+- computeAvg(): funzione che prende in input la matrice S e calcoli
+la media di una singola colonna (parametro della funzione) della matrice; 
+- buildAvgArray(): funzione che prenda in input la matrice di strutture S e 
+calcoli la media per ogni colonna di S come specificato al punto 5 (mediante la funzione computeAvg()), restituisca
+un array di dimensioni M contenenti tali valori medi; 
+- sortColMatrix(): funzione che proceda all'ordinamento della matrice S 
+come specificato al punto 6.
+
+Si proceda, da shell, nel seguente modo:
+
+$ ./a.out 5 6 < input.txt
