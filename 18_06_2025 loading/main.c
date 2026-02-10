@@ -53,13 +53,13 @@ Parameters readInput(int argc, char* argv[])
 	if (!argv[2] || strlen(argv[2]) < 5 || strcmp(argv[2] + strlen(argv[2]) - 4, ".bin"))
 		error("Extension for second file not correct");
 	
-	char* inputFilename = (char*)malloc(sizeof(char)*strlen(argv[1]) + 1);
+	char* inputFilename = (char*)malloc(sizeof(char)*(strlen(argv[1]) + 1));
 	if (!inputFilename)
 		error("Allocation for inputFilename wrong");
 	
 	strcpy(inputFilename, argv[1]);
 	
-	char* outputFilename = (char*)malloc(sizeof(char)*(strlen(argv[2]) + 1);
+	char* outputFilename = (char*)malloc(sizeof(char)*(strlen(argv[2]) + 1));
 	if (!outputFilename)
 		error("Allocation for outputFilename wrong");
 	
