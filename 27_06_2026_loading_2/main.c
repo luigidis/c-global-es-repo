@@ -26,10 +26,9 @@ int main(int argc,char* argv[])
 {
 	printf("====================A====================");
 	
-	printf("====================A====================");
-	printf("====================A====================");
-	printf("====================A====================");
-	printf("====================A====================");
+	printf("====================B====================");
+	printf("====================C====================");
+	printf("====================D====================");
 	
 	
 }
@@ -51,7 +50,7 @@ Parameters readInput(int argc, char* argv[])
 	char *inputFilename = argv[1];
 	float f = atof(argv[2]);
 	
-	if (!inputFilename || strlen(inputFilename) < 5 || strcmp(inputFilename + strlen(inputFilename) - 4, ".txt")
+	if (!inputFilename || strlen(inputFilename) < 5 || strcmp(inputFilename + strlen(inputFilename) - 4, ".txt"))
 	{
 		error("Input file name has a wrong extension");
 	}
