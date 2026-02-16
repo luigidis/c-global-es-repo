@@ -23,7 +23,7 @@ int peek(Queue* );
 
 void main (int argc, char* argv[])
 {
-
+    
 }
 
 void error(char* e)
