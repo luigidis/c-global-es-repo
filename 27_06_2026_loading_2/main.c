@@ -237,5 +237,5 @@ void elab(float f, List* list)
 		current = current->next;
 	}
 
-	printf("\nFine elab, numero di record tali che V >= %f è %d", f, i);
+	printf("\nFine elab, numero di record tali che V >= %f = %d", f, i);
 }
