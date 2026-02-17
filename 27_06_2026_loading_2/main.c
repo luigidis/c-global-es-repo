@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_STRING_SIZE 30
+#define MAX_STRING_SIZE 31
 
 typedef struct p {
 	char* inputFilename;
